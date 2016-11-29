@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API_Test",
+		"_postman_id": "9cddc1af-8718-6332-f59e-c027d43ec7d4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://br8i96mbj0.execute-api.ap-northeast-1.amazonaws.com/toiletpoc_state",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://br8i96mbj0.execute-api.ap-northeast-1.amazonaws.com/toiletpoc_state",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
